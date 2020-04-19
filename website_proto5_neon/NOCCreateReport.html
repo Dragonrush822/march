@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RAM NOC Claro</title>
+<link rel="stylesheet" href="neon_style.css" />
+</head>
+
+<!--	/////////////////////// Dropdown and Checkbox Sizes Classes (Do not touch) ////////////////////////////////////	-->
+
+<!--Large Checkbox Size-->
+<style> 
+input.larger{
+	width: 20px;
+	height: 20px;
+	}
+</style>
+
+<!--Drop down with scroll-wheel-->
+	<style type="text/css">
+		.dropbtn {
+		background-color: red;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	}
+	
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: white;
+		min-width: 300px;
+		max-height: 200px;    
+		overflow: auto;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+	
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	
+	.dropdown-content a:hover {background-color: red}
+	
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	
+	.dropdown:hover .dropbtn {
+		background-color: red;
+	}
+	</style>
+	
+	<!--Estilo de las cajas de dropdown-->
+<style>
+	.dropbtn {
+	/*Background of dropbox before hover*/
+	  background-color: white;
+	  color: black;
+	  padding: 26px;
+	  font-size: 16px;
+	  border: 5px solid red;
+	}
+	
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+	
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  /*Color of dropbox options while hover*/
+	  background-color: whitesmoke;
+	  min-width: 20px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	
+	.dropdown-content a {
+	  color: black;
+	  padding: 20px 24px;
+	  text-decoration: none;
+	  display: block;
+	}
+	
+	.dropdown-content a:hover {background-color: #ddd;}
+	
+	.dropdown:hover .dropdown-content {display: block;}
+	
+	.dropdown:hover .dropbtn {background-color: #cfcfc4;}
+	</style>
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	-->
+
+<body>
+	
+	<!--test button-->
+	<br>
+<b href="#">
+	Neon Button
+</b>
+
+<!--Start of actual webpage -->
+
+<!--Title-->
+<h1><font color="red">Reporte para Averias Mayores NOC Claro </font></h1> 
+
+<!-- Imagen de Logo de Claro -->  
+<img src="claro_logo0.png" alt="Claro Logo" width="200" height="200">
+
+<!--Call neon_style.css file-->
+<link rel="stylesheet" href="neon_style.css" />
+
+<br>
+
+<!-- Descripcion de evento textbox area -->
+<h2><font color="red"><h3>Descripcion de Evento:</h3></font></h2>
+<textarea  id="DescripcionEvento"  rows="10" cols="50">
+</textarea>
+<br>
+
+
+<br>
+
+<!--Seleccionar la Fecha -->
+<b href='#'>
+<div class="dropdown">
+	<button class="dropbtn"><font color="red"><h3>   Fecha   </h3></font></button>
+	<form action="/action_page.php"> 
+	<div class="dropdown-content">
+	</b>
+		<e href="#">
+		<label for="DIA"> <font size ="5">DIA</font> </label>
+		<select id="dia">
+			<option value="1"> 1 </option>
+			<option value="2"> 2 </option>
+			<option value="3"> 3 </option>
+			<option value="4"> 4 </option>
+			<option value="5"> 5 </option>
+			<option value="6"> 6</option>
+			<option value="7"> 7 </option>
+			<option value="8"> 8 </option>
+			<option value="9"> 9 </option>
+			<option value="10"> 10 </option>
+			<option value="11"> 11 </option>
+			<option value="12"> 12 </option>
+			<option value="12"> 13 </option>
+			<option value="12"> 14 </option>
+			<option value="12"> 15 </option>
+			<option value="12"> 16 </option>
+			<option value="12"> 17 </option>
+			<option value="12"> 18 </option>
+			<option value="12"> 19 </option>
+			<option value="12"> 20 </option>
+			<option value="12"> 21 </option>
+			<option value="12"> 22 </option>
+			<option value="12"> 23 </option>
+			<option value="12"> 24 </option>
+			<option value="12"> 25 </option>
+			<option value="12"> 26 </option>
+			<option value="12"> 27 </option>
+			<option value="12"> 28 </option>
+			<option value="12"> 29 </option>
+			<option value="12"> 30 </option>
+			<option value="12"> 31 </option>
+			</select>
+		</e>
+		<br>	
+
+		
+		<e href="#">
+		<label for="MES"> <font size ="5">Mes</font></label>
+
+	
+		<!--Select Value de mes-->
+		<select id="mes">
+		<option value="1"> 1 </option>
+		<option value="2"> 2 </option>
+		<option value="3"> 3 </option>
+		<option value="4"> 4 </option>
+		<option value="5"> 5 </option>
+		<option value="6"> 6</option>
+		<option value="7"> 7 </option>
+		<option value="8"> 8 </option>
+		<option value="9"> 9 </option>
+		<option value="10"> 10 </option>
+		<option value="11"> 11 </option>
+		<option value="12"> 12 </option>
+		</select>
+		</e>		
+		<br>
+		
+			<label for="año"> <font size ="5" color="red">Año</font></label>	
+					
+			<br>
+			<!--Textbox de año-->
+			<input type="año" name="año">
+		
+
+	</div>
+	</form>
+</div>
+
+<!-- Numero de ticket de TSRW -->
+ <h2><font color="red"><h3>TSRW:</h3></font></h2> <input type="text" name="TSRW" ><br>
+  
+ <!-- Numero de ticket de NORS -->
+ <h2><font color="red"><h3>NORS:</h3></font></h2> <input type="text" name="NORS" ><br>
+ <br>
+
+<br>
+
+<!-- Tipo de Cliente Afectado-->
+<b href="#">
+  <div class="dropdown">
+	<button class="dropbtn"><font color="red"><h3>Tipo de Cliente Afectado</h3></font></button>
+  </b>
+	<form action="/action_page.php">
+	<div class="dropdown-content">
+
+	<e href="#">
+	<input type="checkbox" class="larger" id="negocio" name="negocio" >
+	<label for="negocio"> <font size ="5">Negocio</font></label><br>
+	</e>
+	
+	<e href="#">
+	<input type="checkbox" class="larger" id="Residencia" name="residencia">
+	<label for="Residencia"> <font size ="5">Residencia</font></label><br>
+	</e>
+	
+	</div>
+	</form>
+	
+</div>
+
+<br>
+<br>
+
+<!-- Cantidad de Clientes Afectados -->
+<b href="#">
+<div class="dropdown">
+	<button class="dropbtn"><font color="red"><h3>Cantidad de Clientes Afectados</h3></font></button>
+</b>
+	<form action="/action_page.php"> 
+	<div class="dropdown-content">
+		
+		<e href="#">
+		<input type="checkbox" class="larger" id="1000" name="1000" >
+		<label for="1000"> <font size ="5">1,000+</font></label>
+		</e>
+		<br>
+		<e href="#">
+		<input type="checkbox" class="larger" id="5000" name="5000" >
+		<label for="5000"> <font size ="5">5,000+</font></label><br>
+		</e>
+		<br>
+		<e href="#">
+		<input type="checkbox" class="larger" id="10000" name="10000" >
+		<label for="10000"> <font size ="5">10,000+</font></label><br>
+	    </e>
+
+	</div>
+	</form>
+</div>
+	
+<br>
+<br>
+
+<!-- Lista de Pueblos afectados -->
+<b href="#">
+<div class="dropdown">
+  <button class="dropbtn"><font color="red"><h3>Pueblos</h3></font></button>
+</b>
+  <div class="dropdown-content">
+  	<b href="#"><input type="checkbox" class="larger" name="Adjuntas" > Adjuntas <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Aguada" > Aguada <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Aguadilla" > Aguadilla <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Aguas_Buenas" > Aguas Buenas <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Aibonito" > Aibonito <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Arecibo" > Arecibo <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Arroyo" > Arroyo <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Anasco" > Anasco <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Barceloneta" > Barceloneta <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Barranuitas" > Barranquitas<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Bayamon" > Bayamon <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Cabo_Rojo" > Cabo Rojo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Caguas" > Caguas<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Camuy" > Camuy<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Canovanas" > Canovanas <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Carolina" > Carolina <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Catano" > Catano <br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Cayey" > Cayey<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Ceiba" > Ceiba<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Ciales" > Ciales<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Cidra" > Cidra<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Coamo" > Coamo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Comerio" > Comerio<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Corozal" > Corozal<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Culebra" > Culebra<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Dorado" > Dorado<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Fajardo" > Fajardo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Florida" > Florida<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Guayama" > Guayama<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Guayanilla" > Guayanilla<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Guaynabo" > Guaynabo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Gurabo" > Gurabo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Guanica" > Guanica<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Hatillo" > Hatillo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Hormigueros" > Hormigueros<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Humacao" > Humacao<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Isabela" > Isabela<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Jayuya" > Jayuya<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Juana_Diaz" > Juana Diaz<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Juncos" > Juncos<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Lajas" > Lajas<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Lares" > Lares<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Las_Marias" > Las Marias<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Las_Piedras" > Las Piedras<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Loiza" > Loiza<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Luquillo" > Luquillo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Manati" > Manati<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Maricao" > Maricao<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Maunabo" > Maunabo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Mayaguez" > Mayaguez<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Moca" > Moca<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Morovis" > Morovis<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Naguabo" > Naguabo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Naranjito" > Naranjito<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Orocovis" > Orocovis<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Patillas" > Patillas<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Penuelas" > Penuelas<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Ponce" > Ponce<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Quebradillas" > Quebradillas<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Rincon" > Rincon<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Rio_Grande" > Rio Grande<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Sabana_Grande" > Sabana Grande<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Salinas" > Salinas<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="San_German" > San German<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="San_Juan" > San Juan<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="San_Lorenzo" > San Lorenzo<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="San_Sebastian" > San Sebastian<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Santa_Isabel" > Santa Isabel<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Toa_Alta" > Toa Alta<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Toa_Baja" > Toa Baja<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Trujillo_Alto" > Trujillo Alto<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Utuado" > Utuado<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Vega_Alta" > Vega Alta<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Vieques" > Vieques<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Villalba" > Villalba<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Yabucoa" > Yabucoa<br></b>
+	<b href="#"><input type="checkbox" class="larger" name="Yauco" > Yauco<br></b>
+  </div>
+</div>
+
+<br>
+<br>
+
+</head>
+<body>
+
+	<!-- Equipos Afectados-->
+	<b href="#">
+	<div class="dropdown">
+		<button class="dropbtn"><font color="red"><h3>Tipo de Equipos Afectados</h3></font></button>
+	</b>
+		<form action="/action_page.php"> 
+		<div class="dropdown-content">
+
+			<e href="#">
+			<input type="checkbox" class="larger"   id="RBS" name="RBS" >
+			<label for="RBS"> <font size ="5">RBS</font> </label>
+			<select id="cantidadRBS">
+				<option value="0"> 0 </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6</option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+				</select>
+			</e>
+			<br>
+			
+			<e href="#">
+			<input type="checkbox" class="larger"  id="3800" name="3800" >
+			<label for="3800"> <font size ="5">3800</font></label>
+			<select  id="cantidad3800">
+				<option value="0"> 0 </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6</option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+				</select>
+			</e>
+			<br>
+			
+			<e href="#">
+			<input type="checkbox" class="larger"  id="24G" name="24G" >
+			<label for="24G"> <font size ="5">24G</font></label>
+			<select id="cantidad24G">
+				<option value="0"> 0 </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6</option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+				</select>
+			</e>
+			<br>
+			
+			<e href="#">
+			<input type="checkbox" class="larger"  id="DSLAMS" name="DSLAMS" >
+			<label for="DSLAMS"> <font size ="5">DSLAMS</font></label>
+			<select id="cantidadDSLAMS">
+				<option value="0"> 0 </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6</option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+				</select>
+			</e>
+			<br>
+
+			<e href="#">
+			<input type="checkbox" class="larger"  id="VRADS" name="VRADS" >
+			<label for="VRADS"><font size ="5">VRADS</font></label>
+			<select id="cantidadVRADS">
+				<option value="0"> 0 </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6</option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+				</select>
+			</e>
+			
+			<e href="#">
+			<input type="checkbox" class="larger"  id="GPON" name="GPON" >
+			<label for="GPON"> <font size ="5">GPON</font></label>		
+			<select id="cantidadGPON">
+				<option value="0"> 0 </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6</option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+				</select>
+			</e>
+			<br>
+			
+			<e href="#">
+			<input type="checkbox" class="larger"  id="Cisco 3800" name="Cisco 3800" >
+			<label for="Cisco 3800"> <font size ="5">Cisco 3800</font></label>
+			<select id="cantidadCisco3800">
+				<option value="0"> 0 </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6</option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+				</select>
+			</e>
+			<br>
+
+			<e href="#">
+			<input type="checkbox" class="larger"  id="Cisco 24G" name="Cisco 24G" >
+			<label for="Cisco 24G"> <font size ="5">Cisco 24G</font></label>
+			<select id="cantidadCisco24G">
+				<option value="0"> 0 </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6</option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+				</select>
+			</e>
+			<br>
+			
+			<e href="#">
+			<input type="checkbox" class="larger"  id="EFM Raptor" name="EFM Raptor" >
+			<label for="EFM Raptor"> <font size ="5">EFM Raptor</font></label>
+			<select id="cantidadEFMraptor">
+				<option value="0"> 0 </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6</option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+				</select>
+			</e>
+
+			<e href="#">
+				<input type="checkbox" class="larger"  id="MXK" name="MXK" >
+				<label for="MXK"> <font size ="5">MXK</font></label>
+				<select id="cantidadMXK">
+					<option value="0"> 0 </option>
+					<option value="1"> 1 </option>
+					<option value="2"> 2 </option>
+					<option value="3"> 3 </option>
+					<option value="4"> 4 </option>
+					<option value="5"> 5 </option>
+					<option value="6"> 6</option>
+					<option value="7"> 7 </option>
+					<option value="8"> 8 </option>
+					<option value="9"> 9 </option>
+					<option value="10"> 10 </option>
+					<option value="11"> 11 </option>
+					<option value="12"> 12 </option>
+					</select>
+				</e>
+			<br>
+
+		</div>
+		</form>
+	</div>
+
+<br><br>
+
+<!-- Tipo de Averia  -->
+<b href="#">
+<div class="dropdown">
+	<button class="dropbtn"><font color="red"><h3>Tipo de Averia</h3></font></button>
+	</b>
+	<form action="/action_page.php"> 
+	<div class="dropdown-content">
+
+		<b href="#">
+		<input type="checkbox" class="larger"  id="SeInvestiga" name="SeInvestiga" >
+		<label for="SeInvestiga"><font size ="5">Se Investiga</font></label>
+		</b>
+		<br>
+
+		
+		<b href="#">
+		<input type="checkbox" class="larger"  id="AAA" name="AAA" >
+		<label for="AAA"> <font size ="5">AAA</font></label>
+		</b>
+		<br>
+
+		<b href="#">
+		<input type="checkbox" class="larger"  id="AAE" name="AAE" >
+		<label for="AAE"><font size ="5">AAE</font></label>
+		</b>
+		<br>
+
+		<b href="#">
+		<input type="checkbox" class="larger"  id="Accidente" name="Accidente" >
+		<label for="Accidente"><font size ="5">Accidente</font></label>
+		</b>
+		<br>
+
+		<b href="#">
+		<input type="checkbox" class="larger" id="TrabajoPorUnTercero" name="TrabajoPorUnTercero" >
+		<label for="TrabajoPorUnTercero"><font size ="5">Trabajo por Tercero</font></label><br>
+		</b>
+		<br>
+
+	</div>
+	</form>
+</div>
+
+<br>
+<br>
+
+<!-- Causa de averia -->
+<body>
+	<b href="#">
+<div class="dropdown">
+	<button class="dropbtn"><font color="red"><h3>Causa de Averia</h3></font></button>
+	</b>
+	<form action="/action_page.php"> 
+	<div class="dropdown-content">
+
+		<b href="#">
+		<input type="checkbox" class="larger"  id="CorteDeFibra" name="Corte de Fibra" >
+		<label for="CorteDeFibra"><font size ="5">Corte de Fibra</font></label>
+		</b>
+		<br>
+
+		<b href="#">
+		<input type="checkbox" class="larger" id="Apagon" name="Apagon" >
+		<label for="Apagon"><font size ="5">Apagon</font></label>
+		</b>
+		<br>
+
+		<b href="#">
+		<input type="checkbox" class="larger"  id="EquipoDeTransmision" name="EquipoDeTransmision" >
+		<label for="EquipoDeTransmision"> <font size ="5">Equipo de Transmision</font></label>
+		</b>
+		<br>
+		
+		<b href="#">
+		<input type="checkbox" class="larger"  id="Other" name="Other">
+		<label for="Other"><font size ="5">Other</font></label>
+		</b>
+		<br>
+		
+	</div>
+	</form>
+</div>
+
+<br>
+
+<!-- Comentarios text box area -->
+
+<font color="red"><h2>Comentarios:</h2></font></h2>
+<textarea  id="commentarios"  rows="10" cols="50">
+</textarea>
+
+<br>
+<br>
+
+<!-- Mapa de Puerto Rico -->
+<img src="mapa_PuertoRico_politico.jpg" alt="mapa_de_Puerto_Rico" width="800" height="300">
+<br>
+
+<br>
+<b href="#" class="bigButton" >Submit</b>
+<br>
+<br>
+
+
+<!-------------------------------------------------------------------->
+
+</body>
+</html> 
